@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 .gridContainer{
     border: red solid;
@@ -29,4 +31,16 @@ body {
 }
 h2 {
     text-align: center;
+}
+@media (min-width: 576px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
 }
