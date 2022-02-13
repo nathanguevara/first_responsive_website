@@ -17,35 +17,50 @@ body {
     background-color: #2BCEC1;
     font-size: 2em;
 }
+p {
+    padding: 0px 50px 0px 50px;
+}
 .titleOne {
     grid-column: 1;
     grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .titleTwo {
     grid-column: 2;
     grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .titleThree {
     grid-column: 3;
     grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 p.titleTextTwo{
     font-size: 1.5em;
     width: 200px;
     text-align: center;
-    border-top: solid #F46831 30px;
+    border-top: solid #F46831 30px;  
 }
 p.titleTextOne {
     font-size: 1.5em;
     width: 200px;
     text-align: center;
-    border-top: solid #33A8DD 30px;
+    border-top: solid #33A8DD 30px;  
 }
 p.titleTextThree {
     font-size: 1.5em;
     width: 200px;
     text-align: center;
-    border-top: solid #2BCEC1 30px;
+    border-top: solid #2BCEC1 30px;  
 }
 @media only screen and (max-width: 576px) {
     body {
