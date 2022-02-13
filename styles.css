@@ -1,23 +1,25 @@
 body {
     margin: 0;
+    color: white;
+    background-color: black;
 }
 .gridContainer{
     display: grid;
     grid-template-rows: 50% 50%;
-	grid-template-columns: 33% 33% 33%;      
+	grid-template-columns: 33% 33% 33%;
+    column-gap: 10px;
 }
 .header {
     text-align: center;
     grid-column: 1/4;
     grid-row: 1;
     color: white;
-    background-color: #ED8B16;
+    background-color: #2BCEC1;
     font-size: 2em;
 }
 .titleOne {
     grid-column: 1;
     grid-row: 2;
-
 }
 .titleTwo {
     grid-column: 2;
@@ -25,20 +27,33 @@ body {
 }
 .titleThree {
     grid-column: 3;
-    grid-row: 2
+    grid-row: 2;
 }
-h2 {
+p.titleTextTwo{
+    font-size: 1.5em;
+    width: 200px;
     text-align: center;
-    border-top: solid blue 30px;
+    border-top: solid #F46831 30px;
 }
-@media (min-width: 576px) {
+p.titleTextOne {
+    font-size: 1.5em;
+    width: 200px;
+    text-align: center;
+    border-top: solid #33A8DD 30px;
+}
+p.titleTextThree {
+    font-size: 1.5em;
+    width: 200px;
+    text-align: center;
+    border-top: solid #2BCEC1 30px;
+}
+@media only screen and (max-width: 576px) {
+    body {
+      background-color: white;
+      color: black;
+    }
     .gridContainer {
         display: flex;
-        fle
+        flex-direction: column;
     }
-}
-@media (min-width: 992px) {
-    .gridContainer {
-        display: grid;
-    }
-}
+  }
